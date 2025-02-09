@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
 
 app.use(express.static("public"))
 
-// const myServer = http.createServer((req, res)=> {
-//    res.end("hello")
-// })
+const myServer = http.createServer((req, res)=> {
+   res.end("hello")
+})
 
 app.listen(PORT,()=>{
     console.log(`server running at ${PORT}`);
